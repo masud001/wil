@@ -1,0 +1,164 @@
+body,
+html {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Times New Roman", Times, serif;
+	background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0px;
+	padding: 0px;
+}
+.banner-area {
+	padding: 15px 0px 0px 0px;
+}
+.image-container {
+	width: 100%;
+	height: 100%;
+	padding: 0px 0px 12px 15px;
+}
+
+.image-content {
+	padding: 15px;
+}
+.image-content h1 {
+	margin-bottom: 10px;
+	font-weight: 900;
+}
+.image-content p {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.media {
+	margin-top: 0px !important;
+	border-bottom: 1px solid #ffffff;
+}
+.media-body {
+	padding: 15px;
+}
+.media-heading {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.image-padding-top-right {
+}
+.image-padding-top-right img {
+	width: 150px;
+	height: 150px;
+	padding: 0 0 15px 15px;
+}
+.image-padding-right {
+	padding-right: 15px;
+}
+
+.image-padding-right img {
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+}
+.bg-color-1 {
+	background-color: #540703;
+	color: #ffffff;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+
+.bg-color-2 .media {
+	background-color: #3e0301;
+	color: #ffffff;
+	background-repeat: no-repeat;
+	min-height: 162px;
+}
+
+.image-btn {
+	background-color: #ffffff;
+	color: #000000;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	font-weight: 900;
+	text-transform: capitalize;
+}
+.image-btn:hover {
+	text-decoration: none;
+}
+
+.footer-title {
+	display: flex;
+	background-color: #000;
+	color: #fff;
+	justify-content: space-around;
+	padding: 10px 0px;
+}
+.footer-title span {
+	color: #690802;
+	font-size: 20px;
+	font-weight: 900;
+}
+.footer-single-title {
+}
+.footer-single-title p {
+	margin: 0px;
+	font-size: 18px;
+}
+@media (min-width: 320px) {
+	.img-responsive {
+		margin: 0 auto;
+	}
+	.image-container {
+		padding: 0 15px;
+	}
+	.bg-color-1 {
+		text-align: center;
+	}
+	.bg-color-2 {
+		display: none;
+	}
+	.footer-title {
+		display: none;
+	}
+}
+@media (min-width: 992px) {
+	.bg-color-1 {
+		text-align: left;
+	}
+	.bg-color-2 {
+		display: block;
+	}
+	.footer-title {
+		display: flex;
+	}
+	.bg-color-1 {
+		min-height: 338px;
+	}
+	.bg-color-2 .media {
+		height: 179px;
+	}
+}
+@media (min-width: 1200px) {
+	.bg-color-1 {
+		min-height: 338px;
+	}
+	.bg-color-2 .media {
+		height: 169px;
+	}
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1600px) {
+	.container {
+		width: 1570px;
+	}
+
+	.image-container {
+		padding: 0px 0px 0px 15px;
+	}
+}
