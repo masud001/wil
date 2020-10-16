@@ -1,0 +1,2892 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Greenstar | Prototype</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- bootstrap 4  -->
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+		<link rel="stylesheet" href="./style.css" />
+		<!-- equity css  -->
+		<link rel="stylesheet" href="./css/style-dashboard.css" />
+		<!-- owl carousel css -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<!-- chart js css  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css"
+			integrity="sha512-SUJFImtiT87gVCOXl3aGC00zfDl6ggYAw5+oheJvRJ8KBXZrr/TMISSdVJ5bBarbQDRC2pR5Kto3xTR0kpZInA=="
+			crossorigin="anonymous"
+		/>
+		<!-- datepicker  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+			integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="./css/fonts.css" />
+		<!-- chart js script  -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+			integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js
+"></script>
+	</head>
+
+	<body>
+		<section class="dashboard_page p-4">
+			<!-- equity page tool bars start  -->
+			<div class="controll_tools_bar__area" class="tools_bar__section">
+				<div class="container-fluid">
+					<div class="row pb-4">
+						<!-- balances dropdown menu   -->
+						<div class="balances__menu_wrapper">
+							<!-- first label menu  -->
+							<ul class="balances__wrapper">
+								<li>
+									<a
+										class="balances__item"
+										data-toggle="collapse"
+										href="#labelOne"
+										role="button"
+										aria-expanded="false"
+										aria-controls="labelOne"
+										>balances</a
+									>
+									<div
+										class="collapse balances_items__wrapper"
+										id="labelOne"
+									>
+										<ul>
+											<li>
+												<a
+													class="d-flex assets__item align-items-center justify-content-between"
+													data-toggle="collapse"
+													href="#assets"
+													role="button"
+													aria-expanded="false"
+													aria-controls="assets"
+													><span>Assets</span>
+													<span>$1,494,863</span></a
+												>
+												<div
+													class="collapse show assets__items_wrapper"
+													id="assets"
+												>
+													<ul>
+														<li>
+															<a
+																class="d-flex cash__item align-items-center justify-content-between"
+																data-toggle="collapse"
+																href="#cash"
+																role="button"
+																aria-expanded="false"
+																aria-controls="cash"
+																><span
+																	>cash</span
+																>
+																<span
+																	>$1,494,863</span
+																></a
+															>
+															<div
+																class="collapse cash__items_wrapper"
+																id="cash"
+															>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+															</div>
+														</li>
+														<li>
+															<a
+																class="d-flex invesment__item align-items-center justify-content-between"
+																data-toggle="collapse"
+																href="#invesment"
+																role="button"
+																aria-expanded="false"
+																aria-controls="invesment"
+																><span
+																	>invesment</span
+																>
+																<span
+																	>$1,494,863</span
+																></a
+															>
+															<div
+																class="collapse invesment__items__wrapper"
+																id="invesment"
+															>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+															</div>
+														</li>
+														<li>
+															<a
+																class="d-flex miscAssets__item align-items-center justify-content-between"
+																data-toggle="collapse"
+																href="#MiscAssets"
+																role="button"
+																aria-expanded="false"
+																aria-controls="MiscAssets"
+																><span
+																	>Misc.Assets</span
+																>
+																<span
+																	>$1,494,863</span
+																></a
+															>
+															<div
+																class="collapse invesment__items__wrapper"
+																id="MiscAssets"
+															>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+															</div>
+														</li>
+														<li>
+															<a
+																class="d-flex realEstate__item align-items-center justify-content-between"
+																data-toggle="collapse"
+																href="#realestate"
+																role="button"
+																aria-expanded="false"
+																aria-controls="realestate"
+																><span
+																	>Real
+																	Estate</span
+																><span
+																	>$1,494,863</span
+																></a
+															>
+															<div
+																class="collapse invesment__items__wrapper"
+																id="realestate"
+															>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+																<div
+																	class="d-flex mb-2 justify-content-between align-items-center"
+																>
+																	<span
+																		>wells
+																		fargo
+																		<br />
+																		checking</span
+																	>
+																	<span
+																		class="text-center"
+																		>$1,494,863
+																		<br />
+																		<span
+																			class="time"
+																			>7
+																			hours
+																			ago</span
+																		></span
+																	>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<a
+													class="d-flex liabilities__item align-items-center justify-content-between"
+													data-toggle="collapse"
+													href="#Liabilities"
+													role="button"
+													aria-expanded="false"
+													aria-controls="Liabilities"
+													><span>Liabilities</span>
+													<span>$1,494,863</span></a
+												>
+												<div
+													class="collapse show invesment__items__wrapper"
+													id="Liabilities"
+												>
+													<div
+														class="d-flex mb-2 justify-content-between align-items-center"
+													>
+														<span
+															>wells fargo
+															<br />
+															checking</span
+														>
+														<span
+															class="text-center"
+															>$1,494,863
+															<br />
+															<span class="time"
+																>7 hours
+																ago</span
+															></span
+														>
+													</div>
+													<div
+														class="d-flex mb-2 justify-content-between align-items-center"
+													>
+														<span
+															>wells fargo
+															<br />
+															checking</span
+														>
+														<span
+															class="text-center"
+															>$1,494,863
+															<br />
+															<span class="time"
+																>7 hours
+																ago</span
+															></span
+														>
+													</div>
+													<div
+														class="d-flex mb-2 justify-content-between align-items-center"
+													>
+														<span
+															>wells fargo
+															<br />
+															checking</span
+														>
+														<span
+															class="text-center"
+															>$1,494,863
+															<br />
+															<span class="time"
+																>7 hours
+																ago</span
+															></span
+														>
+													</div>
+												</div>
+											</li>
+											<li>
+												<a
+													class="d-flex add_more_item align-items-center justify-content-between"
+													data-toggle="collapse"
+													href="#Liabilities"
+													role="button"
+													aria-expanded="false"
+													aria-controls="Liabilities"
+													><span>Add more </span>
+													<span
+														><i
+															class="fa fa-plus"
+														></i></span
+												></a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<!-- naigation tabs area  -->
+						<div class="naigation__bar_wrapper mx-auto">
+							<!-- tab contents area -->
+							<ul
+								class="nav nav-pills"
+								id="pills-tab"
+								role="tablist"
+							>
+								<li class="" role="presentation">
+									<a
+										class="first_menu active"
+										id="pills-home-tab"
+										data-toggle="pill"
+										href="#pills-home"
+										role="tab"
+										aria-controls="pills-home"
+										aria-selected="true"
+									>
+										<span>
+											<i
+												class="fa fa-th-large"
+												aria-hidden="true"
+											></i>
+										</span>
+										<!-- Home -->
+									</a>
+								</li>
+								<li class="" role="presentation">
+									<a
+										class="second_menu"
+										id="pills-Equity-tab"
+										data-toggle="pill"
+										href="#pills-Equity"
+										role="tab"
+										aria-controls="pills-Equity"
+										aria-selected="false"
+										>Equity</a
+									>
+								</li>
+								<li class="" role="presentation">
+									<a
+										class="second_menu"
+										id="pills-assets-tab"
+										data-toggle="pill"
+										href="#pills-assets"
+										role="tab"
+										aria-controls="pills-assets"
+										aria-selected="false"
+										>Assets</a
+									>
+								</li>
+								<li class="" role="presentation">
+									<a
+										class="second_menu"
+										id="pills-liabilities-tab"
+										data-toggle="pill"
+										href="#pills-liabilities"
+										role="tab"
+										aria-controls="pills-liabilities"
+										aria-selected="false"
+										>liabilities</a
+									>
+								</li>
+								<li class="" role="presentation">
+									<a
+										class="second_menu"
+										id="pills-combo-tab"
+										data-toggle="pill"
+										href="#pills-combo"
+										role="tab"
+										aria-controls="pills-combo"
+										aria-selected="false"
+										>combo</a
+									>
+								</li>
+							</ul>
+
+							<!-- tab contents area end -->
+						</div>
+						<!-- setting tools area  -->
+						<div class="setting__tools_area ml-auto">
+							<nav
+								class="nav justify-content-center align-items-center"
+							>
+								<a
+									class=""
+									href="#"
+									data-toggle="modal"
+									data-target="#exampleModal"
+									><span><i class="fa fa-plus"></i></span
+								></a>
+								<a class="" href="#"
+									><span
+										><i
+											class="fa fa-pencil-square-o"
+										></i> </span
+								></a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- tab pans area  -->
+
+			<!-- main contents body area  -->
+			<section id="main__contents" class="main__contents_wrapper">
+				<div
+					class="tab-content tab__contents_wrapper"
+					id="pills-tabContent"
+				>
+					<!-- home tab start -->
+					<div
+						class="tab-pane fade show active home__section"
+						id="pills-home"
+						role="tabpanel"
+						aria-labelledby="pills-home-tab"
+					>
+						<div class="container-fluid">
+							<div class="row dynamic-columns">
+								<div
+									class="balances_chart_toggle col-lg-9 pt-4 text-center"
+								>
+									<div
+										class="balance_chart_wrapper mb-5 section__item"
+									>
+										<h1 class="h1 text-capitalize">
+											balances
+										</h1>
+										<canvas id="balancesChart"></canvas>
+										<ul
+											class="nav nav-pills legend__buttons align-items-center justify-content-center"
+											id="pills-tab"
+											role="tablist"
+										>
+											<li class="" role="presentation">
+												<a
+													class="nav-link active"
+													id="pills-home-tab"
+													data-toggle="pill"
+													href="#pills-home"
+													role="tab"
+													aria-controls="pills-home"
+													aria-selected="true"
+													>Current</a
+												>
+											</li>
+											<li class="" role="presentation">
+												<a
+													class="nav-link"
+													id="pills-profile-tab"
+													data-toggle="pill"
+													href="#pills-profile"
+													role="tab"
+													aria-controls="pills-profile"
+													aria-selected="false"
+													>1 Month</a
+												>
+											</li>
+											<li class="" role="presentation">
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>6 month</a
+												>
+											</li>
+											<li class="" role="presentation">
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>ytd</a
+												>
+											</li>
+											<li class="" role="presentation">
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>1 years</a
+												>
+											</li>
+											<li class="" role="presentation">
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>3 years</a
+												>
+											</li>
+											<li class="" role="presentation">
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>5 years</a
+												>
+											</li>
+											<li class="" role="presentation">
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>maximum</a
+												>
+											</li>
+											<li
+												class=""
+												role="presentation"
+												id=""
+											>
+												<a
+													class="nav-link"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													id="pills-contact-tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													><span id=""
+														>date range</span
+													>
+													<span class=""
+														><i
+															class="fa fa-calendar"
+														></i
+													></span>
+												</a>
+											</li>
+											<li
+												class="ml-3"
+												role="presentation"
+											>
+												<span class="active"
+													><i
+														class="fas arrow-alt-circle-left"
+													></i
+												></span>
+												<span
+													><i
+														class="fas arrow-alt-circle-right"
+													></i
+												></span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3 py-4 text-center">
+									<div
+										class="pai_chart_wrapper section__item"
+									>
+										<h1 class="h1 text-capitalize">
+											composition
+										</h1>
+										<canvas
+											id="balancesCompositionChart"
+										></canvas>
+										<span class="spacer100"></span>
+										<canvas
+											id="balancesChart2"
+											height="250"
+										></canvas>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-9">
+									<div
+										class="balance_chart_wrapper section__item"
+									>
+										<h1
+											class="h1 text-capitalize text-center"
+										>
+											household balance sheet
+										</h1>
+										<div
+											class="balances__sheet_section table_data_design text-left"
+										>
+											<div class="items_one">
+												<div
+													class="household__data_area d-flex flex-column h-100"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Assets
+																</th>
+																<th scope="col">
+																	Rate
+																</th>
+																<th scope="col">
+																	Anual <br />
+																	Amount
+																</th>
+																<th scope="col">
+																	Balance
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>cash</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	investments
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Misc.Assets
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Real Estate
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+													<table
+														class="table table-borderless mt-auto"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Total
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+											</div>
+											<div class="items_two">
+												<div
+													class="household__data_area d-flex flex-column h-100"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Liabilities
+																</th>
+																<th scope="col">
+																	Rate
+																</th>
+																<th scope="col">
+																	Anual <br />
+																	Amount
+																</th>
+																<th scope="col">
+																	Balance
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>cash</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	investments
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Misc.Assets
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+													<table
+														class="table table-borderless mt-auto"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Total
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+											</div>
+											<div class="items_three">
+												<div
+													class="household__data_area"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Equity
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	New worth
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- equity tab  start-->
+					<div
+						class="tab-pane fade equity__section"
+						id="pills-Equity"
+						role="tabpanel"
+						aria-labelledby="pills-Equity-tab"
+					>
+						<div class="container-fluid">
+							<div class="row dynamic-columns">
+								<div
+									class="balances_chart_toggle col-lg-9 py-4 text-center"
+								>
+									<!-- single data shoing wizard start -->
+									<div class="row mb-5">
+										<div class="col-4">
+											<div
+												class="single__wizards bg__color_naviBlue d-flex justify-content-between"
+											>
+												<div
+													class="wizards_title d-flex flex-column justify-content-start align-items-start"
+												>
+													<span class="h5"
+														>Assets</span
+													>
+													<span class="h1">
+														$145,000,000</span
+													>
+												</div>
+												<span class="h6 align-self-end"
+													>+2.10%</span
+												>
+											</div>
+										</div>
+										<div class="col-4">
+											<div
+												class="single__wizards bg__color_red d-flex justify-content-between"
+											>
+												<div
+													class="wizards_title d-flex flex-column justify-content-start align-items-start"
+												>
+													<span class="h5"
+														>Liabilities</span
+													>
+													<span class="h1">
+														$145,000</span
+													>
+												</div>
+												<span class="h6 align-self-end"
+													>+2.10%</span
+												>
+											</div>
+										</div>
+										<div class="col-4">
+											<div
+												class="single__wizards bg__color_green d-flex justify-content-between"
+											>
+												<div
+													class="wizards_title d-flex flex-column justify-content-start align-items-start"
+												>
+													<span class="h5"
+														>equity</span
+													>
+													<span class="h1">
+														$35,000,000</span
+													>
+												</div>
+												<span class="h6 align-self-end"
+													>+2.10%</span
+												>
+											</div>
+										</div>
+									</div>
+									<!-- single data shoing wizard end -->
+
+									<div
+										class="equity__chart_wrapper mb-5 section__item"
+									>
+										<h1 class="h1 text-capitalize">
+											balances
+										</h1>
+										<canvas id="equityChart1"></canvas>
+										<ul
+											class="nav nav-pills legend__buttons align-items-center justify-content-center"
+											id="pills-tab"
+											role="tablist"
+										>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link active"
+													id="pills-home-tab"
+													data-toggle="pill"
+													href="#pills-home"
+													role="tab"
+													aria-controls="pills-home"
+													aria-selected="true"
+													>Current</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-profile-tab"
+													data-toggle="pill"
+													href="#pills-profile"
+													role="tab"
+													aria-controls="pills-profile"
+													aria-selected="false"
+													>1 Month</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>6 month</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>ytd</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>3 years</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>5 years</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>maximum</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>date range
+													<span
+														><i
+															class="fa fa-calendar"
+														></i
+													></span>
+												</a>
+											</li>
+											<li
+												class="nav-item ml-3"
+												role="presentation"
+											>
+												<span class="active"
+													><i
+														class="fa fa-arrow-left"
+													></i
+												></span>
+												<span
+													><i
+														class="fa fa-arrow-right"
+													></i
+												></span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3 py-4 text-center">
+									<div
+										class="pai_chart_wrapper section__item"
+									>
+										<h1 class="h1 text-capitalize">
+											composition
+										</h1>
+										<canvas
+											id="equityCompositionChart"
+										></canvas>
+										<span class="spacer100"></span>
+										<canvas
+											id="equityChart2"
+											height="300"
+											width="300"
+										></canvas>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-9">
+									<div
+										class="equity__chart_wrapper section__item"
+									>
+										<h1
+											class="h1 text-capitalize text-center"
+										>
+											household balance sheet
+										</h1>
+										<div
+											class="balances__sheet_section table_data_design text-left"
+										>
+											<div class="items_one">
+												<div
+													class="household__data_area d-flex flex-column h-100"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Assets
+																</th>
+																<th scope="col">
+																	Rate
+																</th>
+																<th scope="col">
+																	Anual <br />
+																	Amount
+																</th>
+																<th scope="col">
+																	Balance
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>cash</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	investments
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Misc.Assets
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Real Estate
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+													<table
+														class="table table-borderless mt-auto"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Total
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+											</div>
+											<div class="items_two">
+												<div
+													class="household__data_area d-flex flex-column h-100"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Liabilities
+																</th>
+																<th scope="col">
+																	Rate
+																</th>
+																<th scope="col">
+																	Anual <br />
+																	Amount
+																</th>
+																<th scope="col">
+																	Balance
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>cash</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	investments
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Misc.Assets
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+													<table
+														class="table table-borderless mt-auto"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Total
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+											</div>
+											<div class="items_three">
+												<div
+													class="household__data_area"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Equity
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	New worth
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- assets tab start  -->
+					<div
+						class="tab-pane fade assets__section"
+						id="pills-assets"
+						role="tabpanel"
+						aria-labelledby="pills-assets-tab"
+					>
+						<div class="container-fluid">
+							<div class="row dynamic-columns">
+								<div
+									class="balances_chart_toggle col-lg-9 py-4 text-center"
+								>
+									<!-- single data shoing wizard start -->
+									<div class="row mb-5">
+										<div class="col-4">
+											<div
+												class="single__wizards bg__color_naviBlue d-flex justify-content-between"
+											>
+												<div
+													class="wizards_title d-flex flex-column justify-content-start align-items-start"
+												>
+													<span class="h5"
+														>Assets</span
+													>
+													<span class="h1">
+														$145,000,000</span
+													>
+												</div>
+												<span class="h6 align-self-end"
+													>+2.10%</span
+												>
+											</div>
+										</div>
+										<div class="col-4">
+											<div
+												class="single__wizards bg__color_red d-flex justify-content-between"
+											>
+												<div
+													class="wizards_title d-flex flex-column justify-content-start align-items-start"
+												>
+													<span class="h5"
+														>Liabilities</span
+													>
+													<span class="h1">
+														$145,000</span
+													>
+												</div>
+												<span class="h6 align-self-end"
+													>+2.10%</span
+												>
+											</div>
+										</div>
+										<div class="col-4">
+											<div
+												class="single__wizards bg__color_green d-flex justify-content-between"
+											>
+												<div
+													class="wizards_title d-flex flex-column justify-content-start align-items-start"
+												>
+													<span class="h5"
+														>equity</span
+													>
+													<span class="h1">
+														$35,000,000</span
+													>
+												</div>
+												<span class="h6 align-self-end"
+													>+2.10%</span
+												>
+											</div>
+										</div>
+									</div>
+									<!-- single data shoing wizard end -->
+
+									<div
+										class="equity__chart_wrapper mb-5 section__item"
+									>
+										<h1 class="h1 text-capitalize">
+											balances
+										</h1>
+										<canvas id="assetsChart1"></canvas>
+										<ul
+											class="nav nav-pills legend__buttons align-items-center justify-content-center"
+											id="pills-tab"
+											role="tablist"
+										>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link active"
+													id="pills-home-tab"
+													data-toggle="pill"
+													href="#pills-home"
+													role="tab"
+													aria-controls="pills-home"
+													aria-selected="true"
+													>Current</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-profile-tab"
+													data-toggle="pill"
+													href="#pills-profile"
+													role="tab"
+													aria-controls="pills-profile"
+													aria-selected="false"
+													>1 Month</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>6 month</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>ytd</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>3 years</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>5 years</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>maximum</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>date range
+													<span
+														><i
+															class="fa fa-calendar"
+														></i
+													></span>
+												</a>
+											</li>
+											<li
+												class="nav-item ml-3"
+												role="presentation"
+											>
+												<span class="active"
+													><i
+														class="fa fa-arrow-left"
+													></i
+												></span>
+												<span
+													><i
+														class="fa fa-arrow-right"
+													></i
+												></span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3 py-4 text-center">
+									<div
+										class="pai_chart_wrapper section__item"
+									>
+										<h1 class="h1 text-capitalize">
+											composition
+										</h1>
+										<canvas
+											id="assetsCompositionChart"
+										></canvas>
+										<span class="spacer100"></span>
+										<canvas
+											id="assetsChart2"
+											height="250"
+										></canvas>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-9">
+									<div
+										class="equity__chart_wrapper section__item"
+									>
+										<h1
+											class="h1 text-capitalize text-center"
+										>
+											household balance sheet
+										</h1>
+										<div
+											class="balances__sheet_section table_data_design text-left"
+										>
+											<div class="items_one">
+												<div
+													class="household__data_area d-flex flex-column h-100"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Assets
+																</th>
+																<th scope="col">
+																	Rate
+																</th>
+																<th scope="col">
+																	Anual <br />
+																	Amount
+																</th>
+																<th scope="col">
+																	Balance
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>cash</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	investments
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Misc.Assets
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Real Estate
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+													<table
+														class="table table-borderless mt-auto"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Total
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+											</div>
+											<div class="items_two">
+												<div
+													class="household__data_area d-flex flex-column h-100"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Liabilities
+																</th>
+																<th scope="col">
+																	Rate
+																</th>
+																<th scope="col">
+																	Anual <br />
+																	Amount
+																</th>
+																<th scope="col">
+																	Balance
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>cash</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	investments
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Misc.Assets
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+													<table
+														class="table table-borderless mt-auto"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Total
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+											</div>
+											<div class="items_three">
+												<div
+													class="household__data_area"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Equity
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	New worth
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- liabilities tab start  -->
+					<div
+						class="tab-pane fade liabilities__section"
+						id="pills-liabilities"
+						role="tabpanel"
+						aria-labelledby="pills-liabilities-tab"
+					>
+						<div class="container-fluid">
+							<div class="row dynamic-columns">
+								<div
+									class="balances_chart_toggle col-lg-9 py-4 text-center"
+								>
+									<!-- single data shoing wizard start -->
+									<div class="row mb-5">
+										<div class="col-4">
+											<div
+												class="single__wizards bg__color_naviBlue d-flex justify-content-between"
+											>
+												<div
+													class="wizards_title d-flex flex-column justify-content-start align-items-start"
+												>
+													<span class="h5"
+														>Assets</span
+													>
+													<span class="h1">
+														$145,000,000</span
+													>
+												</div>
+												<span class="h6 align-self-end"
+													>+2.10%</span
+												>
+											</div>
+										</div>
+										<div class="col-4">
+											<div
+												class="single__wizards bg__color_red d-flex justify-content-between"
+											>
+												<div
+													class="wizards_title d-flex flex-column justify-content-start align-items-start"
+												>
+													<span class="h5"
+														>Liabilities</span
+													>
+													<span class="h1">
+														$145,000</span
+													>
+												</div>
+												<span class="h6 align-self-end"
+													>+2.10%</span
+												>
+											</div>
+										</div>
+										<div class="col-4">
+											<div
+												class="single__wizards bg__color_green d-flex justify-content-between"
+											>
+												<div
+													class="wizards_title d-flex flex-column justify-content-start align-items-start"
+												>
+													<span class="h5"
+														>equity</span
+													>
+													<span class="h1">
+														$35,000,000</span
+													>
+												</div>
+												<span class="h6 align-self-end"
+													>+2.10%</span
+												>
+											</div>
+										</div>
+									</div>
+									<!-- single data shoing wizard end -->
+
+									<div
+										class="equity__chart_wrapper mb-5 section__item"
+									>
+										<h1 class="h1 text-capitalize">
+											balances
+										</h1>
+										<canvas id="liabilitiesChart1"></canvas>
+										<ul
+											class="nav nav-pills legend__buttons align-items-center justify-content-center"
+											id="pills-tab"
+											role="tablist"
+										>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link active"
+													id="pills-home-tab"
+													data-toggle="pill"
+													href="#pills-home"
+													role="tab"
+													aria-controls="pills-home"
+													aria-selected="true"
+													>Current</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-profile-tab"
+													data-toggle="pill"
+													href="#pills-profile"
+													role="tab"
+													aria-controls="pills-profile"
+													aria-selected="false"
+													>1 Month</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>6 month</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>ytd</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>3 years</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>5 years</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>maximum</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>date range
+													<span
+														><i
+															class="fa fa-calendar"
+														></i
+													></span>
+												</a>
+											</li>
+											<li
+												class="nav-item ml-3"
+												role="presentation"
+											>
+												<span class="active"
+													><i
+														class="fa fa-arrow-left"
+													></i
+												></span>
+												<span
+													><i
+														class="fa fa-arrow-right"
+													></i
+												></span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3 py-4 text-center">
+									<div
+										class="pai_chart_wrapper section__item"
+									>
+										<h1 class="h1 text-capitalize">
+											composition
+										</h1>
+										<canvas
+											id="liabilitiesCompositionChart"
+										></canvas>
+										<span class="spacer100"></span>
+										<canvas
+											id="liabilitiesChart2"
+											height="250"
+										></canvas>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-9">
+									<div
+										class="equity__chart_wrapper section__item"
+									>
+										<h1
+											class="h1 text-capitalize text-center"
+										>
+											household balance sheet
+										</h1>
+										<div
+											class="balances__sheet_section table_data_design text-left"
+										>
+											<div class="items_one">
+												<div
+													class="household__data_area d-flex flex-column h-100"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Assets
+																</th>
+																<th scope="col">
+																	Rate
+																</th>
+																<th scope="col">
+																	Anual <br />
+																	Amount
+																</th>
+																<th scope="col">
+																	Balance
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>cash</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	investments
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Misc.Assets
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Real Estate
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+													<table
+														class="table table-borderless mt-auto"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Total
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+											</div>
+											<div class="items_two">
+												<div
+													class="household__data_area d-flex flex-column h-100"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Liabilities
+																</th>
+																<th scope="col">
+																	Rate
+																</th>
+																<th scope="col">
+																	Anual <br />
+																	Amount
+																</th>
+																<th scope="col">
+																	Balance
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>cash</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	investments
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Misc.Assets
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+													<table
+														class="table table-borderless mt-auto"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Total
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+											</div>
+											<div class="items_three">
+												<div
+													class="household__data_area"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Equity
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	New worth
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- combo tab start  -->
+					<div
+						class="tab-pane fade combo__section"
+						id="pills-combo"
+						role="tabpanel"
+						aria-labelledby="pills-combo-tab"
+					>
+						<div class="container-fluid">
+							<div class="row dynamic-columns">
+								<div
+									class="balances_chart_toggle_combo col-lg-12 py-4 text-center"
+								>
+									<div
+										class="equity__chart_wrapper mb-5 section__item"
+									>
+										<h1 class="h1 text-capitalize">
+											balances
+										</h1>
+										<canvas id="comboChart1"></canvas>
+										<ul
+											class="nav nav-pills legend__buttons align-items-center justify-content-center"
+											id="pills-tab"
+											role="tablist"
+										>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link active"
+													id="pills-home-tab"
+													data-toggle="pill"
+													href="#pills-home"
+													role="tab"
+													aria-controls="pills-home"
+													aria-selected="true"
+													>Current</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-profile-tab"
+													data-toggle="pill"
+													href="#pills-profile"
+													role="tab"
+													aria-controls="pills-profile"
+													aria-selected="false"
+													>1 Month</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>6 month</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>ytd</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>3 years</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>5 years</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>maximum</a
+												>
+											</li>
+											<li
+												class="nav-item"
+												role="presentation"
+											>
+												<a
+													class="nav-link"
+													id="pills-contact-tab"
+													data-toggle="pill"
+													href="#pills-contact"
+													role="tab"
+													aria-controls="pills-contact"
+													aria-selected="false"
+													>date range
+													<span
+														><i
+															class="fa fa-calendar"
+														></i
+													></span>
+												</a>
+											</li>
+											<li
+												class="nav-item ml-3"
+												role="presentation"
+											>
+												<span class="active"
+													><i
+														class="fa fa-arrow-left"
+													></i
+												></span>
+												<span
+													><i
+														class="fa fa-arrow-right"
+													></i
+												></span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-9 text-center">
+									<div
+										class="equity__chart_wrapper section__item"
+									>
+										<h1
+											class="h1 text-capitalize text-center"
+										>
+											household balance sheet
+										</h1>
+										<div
+											class="balances__sheet_section table_data_design text-left"
+										>
+											<div class="items_one">
+												<div
+													class="household__data_area d-flex flex-column h-100"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Assets
+																</th>
+																<th scope="col">
+																	Rate
+																</th>
+																<th scope="col">
+																	Anual <br />
+																	Amount
+																</th>
+																<th scope="col">
+																	Balance
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>cash</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	investments
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Misc.Assets
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Real Estate
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+													<table
+														class="table table-borderless mt-auto"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Total
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+											</div>
+											<div class="items_two">
+												<div
+													class="household__data_area d-flex flex-column h-100"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Liabilities
+																</th>
+																<th scope="col">
+																	Rate
+																</th>
+																<th scope="col">
+																	Anual <br />
+																	Amount
+																</th>
+																<th scope="col">
+																	Balance
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>cash</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	investments
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+															<tr>
+																<td>
+																	Misc.Assets
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+													<table
+														class="table table-borderless mt-auto"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Total
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+																<th scope="col">
+																	$2546.00
+																</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+											</div>
+											<div class="items_three">
+												<div
+													class="household__data_area"
+												>
+													<table
+														class="table table-borderless"
+													>
+														<thead>
+															<tr>
+																<th
+																	scope="col"
+																	class="w-50"
+																>
+																	Equity
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	New worth
+																</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+																<td>$33.000</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- main contents body area end  -->
+		</section>
+
+		<!-- Modal -->
+		<div
+			class="modal fade bd-example-modal-xl"
+			id="exampleModal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div
+				class="modal-dialog custom__modal m-auto modal-dialog-centered modal-xl"
+				role="document"
+			>
+				<div class="modal-content w-100 h-100">
+					<div class="modal-body modal__body h-100">
+						<div
+							class="dashboardOptions option1 d-flex justify-content-start align-items-center"
+						>
+							<a href="#" class="option selected" id="optionTwo">
+								<div class="imWrp">
+									<img
+										src="./png/dashboard/cash_flow.png"
+										alt=""
+									/>
+								</div>
+							</a>
+							<a href="#" class="option" id="optionTree">
+								<div class="imWrp">
+									<img
+										src="./png/dashboard/investments.png"
+										alt=""
+									/>
+								</div>
+							</a>
+							<a href="#" class="option" id="optionFour">
+								<div class="imWrp">
+									<img
+										src="./png/dashboard/real_Estate.png"
+										alt=""
+									/>
+								</div>
+							</a>
+							<a href="#" class="option" id="optionFive">
+								<div class="imWrp">
+									<img
+										src="./png/dashboard/insurance.png"
+										alt=""
+									/>
+								</div>
+							</a>
+							<a href="#" class="option" id="optionSix">
+								<div class="imWrp">
+									<img
+										src="./png/dashboard/legal_planning.png"
+										alt=""
+									/>
+								</div>
+							</a>
+							<a href="#" class="option" id="optionSeven">
+								<div class="imWrp">
+									<img
+										src="./png/dashboard/tax_planing.png"
+										alt=""
+									/>
+								</div>
+							</a>
+							<a href="#" class="option" id="optionEight">
+								<div class="imWrp">
+									<img
+										src="./png/dashboard/Goals.png"
+										alt=""
+									/>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="modal-footer modal__footer d-flex flex-row">
+						<button
+							type="button"
+							class="cancel__btn"
+							data-dismiss="modal"
+						>
+							cancel
+						</button>
+						<button type="button" class="add__btn">add</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- equity page contents end  -->
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+		<!-- bootstrap js  -->
+		<script src="./js/bootstrap.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+			integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+			crossorigin="anonymous"
+		></script>
+		<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+		<script src="./index.js" defer></script>
+		<script
+			src="https://kit.fontawesome.com/6a8cd6e3f0.js"
+			crossorigin="anonymous"
+			defer
+		></script>
+		<script src="js/charts/dashboard.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/charts/balancesChart.js"></script>
+		<script src="js/charts/equity.js"></script>
+		<script src="js/charts/assetsChart.js"></script>
+		<script src="js/charts/liabilitiesChart.js"></script>
+		<script src="js/charts/liabilitiesChart.js"></script>
+		<script src="js/charts/comboChart.js"></script>
+	</body>
+</html>

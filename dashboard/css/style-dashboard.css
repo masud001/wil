@@ -1,0 +1,500 @@
+:root {
+	--ash: #4a5a63;
+	--nevyBlue: #3b7193;
+	--yellow: #fcbb0a;
+	--green: #05b838;
+	--greenLight: #3dbb61;
+	--redLight: #dc2d2d;
+	--redDark: #bf1010;
+	--white: #ffffff;
+	--golden: #daa94c;
+	--bg-color: #e8e8e8;
+}
+
+.active {
+	background-color: unset !important;
+}
+/* common css 
+-------------
+*/
+body {
+	font-family: "Neuton", serif;
+}
+body .modal-backdrop {
+	filter: blur(3px);
+}
+.section__padding {
+	padding: 20px;
+}
+.spacer100 {
+	display: block;
+	height: 100px;
+	width: 100%;
+	background-color: transparent;
+}
+.dashboard_page {
+	width: 100%;
+	height: 100%;
+	background-color: var(--bg-color);
+}
+.section__item {
+	background-color: #f2f2f2;
+	padding: 15px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 6px 5px #c7c7c7;
+}
+
+/* balance menu icon setting 
+===============================
+
+*/
+.assets__item,
+.liabilities__item,
+.cash__item,
+.miscAssets__item,
+.realEstate__item,
+.invesment__item {
+	position: relative;
+}
+.balances__menu_wrapper > ul > li > a::after {
+	font-family: "FontAwesome";
+	content: "\f0d7";
+	float: right;
+	transition: 0.5s all;
+	font-size: 16px;
+}
+.balances__menu_wrapper > ul > li > a.collapsed::after {
+	content: "\f0d8";
+	transition: 0.5s all;
+}
+.assets__item[data-toggle="collapse"]::after,
+.liabilities__item[data-toggle="collapse"]::after,
+.realEstate__item[data-toggle="collapse"]::after,
+.invesment__item[data-toggle="collapse"]::after,
+.miscAssets__item[data-toggle="collapse"]::after,
+.cash__item[data-toggle="collapse"]::after {
+	font-family: "FontAwesome";
+	content: "\f0d7";
+	float: left;
+	position: absolute;
+	top: 50%;
+	left: 8px;
+	transform: translate(0%, -50%);
+}
+.assets__item.collapsed::after,
+.liabilities__item.collapsed::after,
+.invesment__item.collapsed::after,
+.miscAssets__item.collapsed::after,
+.realEstate__item.collapsed::after,
+.cash__item.collapsed::after {
+	content: "\f0d8";
+}
+
+/* balances drop down menu 
+===============================================
+*/
+.balances__menu_wrapper {
+	width: 200px;
+	position: relative;
+	z-index: 1;
+}
+.balances__wrapper {
+	position: absolute;
+	width: 200px;
+}
+.balances__wrapper li a {
+	font-family: "Neuton", serif;
+}
+.balances__menu_wrapper ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.balances__menu_wrapper > ul > li {
+	display: block;
+}
+.balances__menu_wrapper ul li a {
+	display: block;
+	padding: 10px 20px;
+	text-transform: capitalize;
+	color: var(--white);
+	font-size: 14px;
+	transition: 0.5s all;
+	font-family: "Neuton", serif;
+}
+.balances__menu_wrapper ul li a span {
+	color: var(--white);
+}
+.balances__menu_wrapper ul li a span i {
+	color: var(--white);
+	font-size: 18px !important;
+}
+.balances__menu_wrapper ul li a:hover {
+	text-decoration: none;
+}
+
+.balances__menu_wrapper > ul > li > a.balances__item {
+	background-color: var(--ash);
+	border-radius: 30px;
+	box-shadow: none;
+}
+.balances__menu_wrapper > ul > li > a.balances__item.balances__item_design {
+	position: relative;
+	box-shadow: 0 3px 5px 0px #000;
+}
+.balances__menu_wrapper
+	> ul
+	> li
+	> a.balances__item.balances__item_design::before {
+	position: absolute;
+	background-color: var(--ash);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	z-index: -1;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+.balances_items__wrapper > ul > li > a.assets__item {
+	background-color: var(--nevyBlue);
+}
+.balances_items__wrapper > ul > li > a.liabilities__item {
+	background-color: var(--redLight);
+}
+.balances_items__wrapper > ul > li > a.add_more_item {
+	background-color: var(--ash);
+}
+
+.assets__items_wrapper ul > li > a.cash__item {
+	background-color: var(--yellow);
+}
+
+.assets__items_wrapper ul > li > a.invesment__item {
+	background-color: var(--green);
+}
+
+.assets__items_wrapper ul > li > a.miscAssets__item {
+	background-color: var(--green);
+}
+
+.assets__items_wrapper ul > li > a.realEstate__item {
+	background-color: var(--redDark);
+}
+.cash__items_wrapper {
+	background-color: var(--golden);
+	padding: 10px 20px;
+	color: var(--white);
+	text-transform: capitalize;
+}
+.invesment__items__wrapper {
+	background-color: var(--greenLight);
+	color: var(--white);
+	text-transform: capitalize;
+	padding: 10px 20px;
+}
+
+.balances__sheet_section {
+	display: grid;
+	grid-gap: 15px;
+	padding: 30px 0px;
+	grid-template-areas:
+		"section1 section2"
+		"section1 section3";
+}
+.cash__items_wrapper,
+.invesment__items__wrapper {
+	font-size: 12px !important;
+}
+.cash__items_wrapper span.time,
+.invesment__items__wrapper span.time {
+	font-size: 9px;
+}
+.items_one {
+	grid-area: section1;
+	background-color: #3f7ea7;
+	border-radius: 15px;
+	color: var(--white);
+}
+.items_two {
+	grid-area: section2;
+	background-color: #d93535;
+	border-radius: 15px;
+}
+.items_three {
+	grid-area: section3;
+	background-color: #2acf59;
+	border-radius: 15px;
+}
+.table_data_design {
+}
+.table_data_design table {
+}
+.table_data_design th {
+	color: var(--white);
+	font-size: 14px;
+	text-transform: capitalize;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.table_data_design td {
+	color: var(--white);
+	font-size: 10px;
+	text-transform: capitalize;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.legend__buttons {
+	text-align: center;
+}
+.legend__buttons > li > a {
+	text-transform: capitalize;
+	font-size: 18px;
+	color: #4c5764 !important;
+	font-weight: 700;
+}
+.legend__buttons > li span.active i {
+	background-color: #9b9ea3 !important;
+}
+.legend__buttons > li > span i.fa-arrow-left {
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+.legend__buttons > li > span i.fa-arrow-right {
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.legend__buttons > li > span i {
+	font-size: 12px;
+	cursor: pointer;
+	background-color: #d2d2d0;
+	margin: 0 !important;
+	width: 30px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #ffffff !important;
+}
+.legend__buttons > li > a span i {
+	font-size: 12px;
+	color: #4c5764;
+}
+.legend__buttons > li > a.active {
+	background-color: #d2d2d0 !important;
+	border-radius: 30px;
+	-moz-box-shadow: inset 3px 5px 5px #9d9da1;
+	-webkit-box-shadow: inset 3px 5px 5px #9d9da1;
+	box-shadow: inset 3px 5px 5px #9d9da1;
+}
+
+/*  naigation tabs area 
+
+==========================================================
+*/
+
+.naigation__bar_wrapper {
+}
+.naigation__bar_wrapper > ul {
+	box-shadow: 0px 0px 6px 5px #c7c7c7;
+	background-color: #f2f2f2;
+	border-radius: 30px;
+}
+.naigation__bar_wrapper > ul > li {
+}
+.naigation__bar_wrapper > ul > li > a {
+	color: var(--ash);
+	font-size: 14px;
+	text-transform: capitalize;
+	padding: 10px 50px;
+	font-weight: 700;
+	display: inline-block;
+}
+.naigation__bar_wrapper > ul > li > a:hover {
+	text-decoration: none;
+}
+.naigation__bar_wrapper > ul > li > a span i {
+	font-size: 12px;
+	margin: 0 !important;
+}
+.naigation__bar_wrapper > ul > li > a.active span i {
+	color: var(--white);
+}
+.naigation__bar_wrapper > ul > li > a.first_menu {
+	padding: 10px 15px;
+}
+.naigation__bar_wrapper > ul > li > a.first_menu.active span i {
+}
+.naigation__bar_wrapper > ul > li > a.active {
+	background-color: var(--ash) !important;
+	color: var(--white) !important;
+	border-radius: 30px;
+	/* transition: 0.5s ease-in; */
+}
+
+/* setting tools area  
+
+==========================================
+*/
+.naigation__bar_wrapper .nav-item .nav-link,
+.wizards_title .h5 {
+	font-family: Neuton-reg !important;
+	font-size: 30px !important;
+}
+.naigation__bar_wrapper .nav-item .nav-link span i {
+	font-size: 30px;
+}
+.setting__tools_area nav a span i {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	text-align: center;
+	color: var(--white);
+	border-radius: 50%;
+	background-color: var(--ash);
+}
+.modal-dialog.custom__modal {
+}
+.modal-dialog.custom__modal .modal-content {
+	background-color: #1c262f;
+	border-radius: 10px;
+}
+.modal__body {
+}
+.modal__body .dashboardOptions a {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	padding: 10px;
+}
+.modal__body .dashboardOptions a:hover {
+	background-color: yellow;
+	border-radius: 50%;
+}
+.modal__footer {
+	border-top: unset !important;
+}
+.modal__footer button {
+	width: unset !important;
+	height: unset !important;
+	padding: 7px 25px;
+	text-transform: capitalize;
+	font-size: 14px;
+}
+.cancel__btn {
+	background-color: var(--nevyBlue);
+}
+.add__btn {
+	background-color: var(--green);
+}
+.cancel__btn,
+.add__btn {
+	font-size: 25px !important;
+}
+/* main contents body area  
+=========================================
+*/
+
+.main__contents_wrapper {
+	background-color: var(--bg-color) !important;
+}
+.tab__contents_wrapper {
+	background-color: var(--bg-color) !important;
+}
+.home__section {
+	background-color: var(--bg-color) !important;
+}
+.equity__section {
+	background-color: var(--bg-color) !important;
+}
+.assets__section {
+	background-color: var(--bg-color) !important;
+}
+.liabilities__section {
+	background-color: var(--bg-color) !important;
+}
+.combo__section {
+	background-color: var(--bg-color) !important;
+}
+.balances_chart_toggle {
+	transition: all 0.3s ease-in;
+}
+/* equity tab page design 
+============================
+*/
+.single__wizards {
+	color: var(--white);
+	text-transform: capitalize;
+	padding: 15px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 6px 5px #c7c7c7;
+}
+
+.single__wizards .h1 {
+	margin-bottom: 0px;
+	font-size: 25px;
+}
+.single__wizards .h5 {
+	margin-bottom: 0px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.single__wizards .h6 {
+	margin-bottom: 0px;
+	font-size: 10px;
+	top: -6px;
+	position: relative;
+}
+.bg__color_red {
+	background-color: var(--redDark);
+}
+.bg__color_red span.h6 {
+	color: #f48585;
+}
+.bg__color_naviBlue {
+	background-color: var(--nevyBlue);
+}
+.bg__color_naviBlue span.h6 {
+	color: #63e98f;
+}
+.bg__color_green {
+	background-color: var(--greenLight);
+}
+.bg__color_green span.h6 {
+	color: #82f3a2;
+}
+.balance_chart_wrapper h1,
+.pai_chart_wrapper h1,
+.equity__chart_wrapper h1,
+.equity__chart_wrapper h1 {
+	font-size: 35px;
+	font-family: Neuton-bold !important;
+	color: #4c5764 !important;
+}
+.balance_chart_wrapper .nav-item .nav-link,
+.balance_chart_wrapper .nav-item .nav-link span i,
+.equity__chart_wrapper .nav-item .nav-link,
+.equity__chart_wrapper .nav-item .nav-link span i {
+	font-size: 21px;
+}
+.balance_chart_wrapper .nav-item .nav-link,
+.equity__chart_wrapper .nav-item .nav-link {
+	font-weight: bold;
+}
+
+.household__data_area .table thead tr th {
+	font-size: 18px;
+	font-weight: normal;
+}
+.household__data_area .table thead tr th:first-child {
+	font-family: Neuton-light !important;
+	font-size: 27px;
+}
+
+.household__data_area .table tbody tr td {
+	font-size: 18px;
+}

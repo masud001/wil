@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenstar | Prototype</title>
+<link
+    href="https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400&family=Roboto:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" /><link rel="stylesheet" href="css/owl.carousel.min.css">
+</head>
+
+<body class="profile_page">
+
+    <div class="nav-menu">
+        <span>Dashboard</span>
+        <div class="menu-items">
+            <div class="magnify ">
+                <img src="./png/magnify.png" class="searchSwitch" alt="">
+                <!-- <i class="  fas fa-search"></i> -->
+                <input type="text" placeholder="Write something for search"><img src="./png/magnify.png" class="searchSwitch hidden" alt=""></div>
+            <div class="r1 rounder"><img name='0' class="topIcon vault" src="./png/secondIcon.png" alt="" /></div>
+            <div class="r2 rounder"><img name='1' class="topIcon alert" src="./png/thirdIcon.png" alt="" /></div>
+            <div class="r3 rounder"><img name='2' class="topIcon contact" src="./png/fourthIcon.png" alt="" /></div>
+            <div class="r4 lst"><img name='3' class="topIcon user" src="./png/icon.png" alt="" /></div>
+        </div>
+    </div>
+  <div class="dashboard">
+    <a id="logo" target="_blank" href="https://greenstaradvisors.com/" class="logo">
+        <img src="./png/logo.png" alt="" />
+        <img src="./png/GreenStar_logo.png" class="logo_name" alt="">
+    </a>
+        <a href="https://greenstaradvisors.com/" class="mini_logo"><img src="./png/logoWithName.png" alt=""></a>
+    <div class="dashboard-content">
+      <div class="dashboardOptions">
+        <a href="index.html" class="option">
+          <div class="asd imWrp"><img src="./png/dashboard/dashboard.png" alt="" /></div>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="index.html" class="option">
+			<div class="imWrp">
+				<img src="./png/dashboard/cash_flow.png" alt="" />
+			</div>
+			<span>Cash Flow</span>
+        </a>
+        <a href="index.html" class="option">
+			<div class="imWrp">
+				<img src="./png/dashboard/investments.png" alt="" />
+			</div>
+			<span>Investments</span>
+        </a>
+        <a href="index.html" class="option">
+          <div class="imWrp">
+            <img src="./png/dashboard/real_Estate.png" alt="" />
+          </div>
+          <span>Real Estate</span>
+        </a>
+        <a href="index.html" class="option">
+          <div class="imWrp">
+            <img src="./png/dashboard/insurance.png" alt="" />
+          </div>
+          <span>Insurance</span>
+        </a>
+        <a href="index.html" class="option">
+          <div class="imWrp">
+            <img src="./png/dashboard/legal_planning.png" alt="" />
+          </div>
+          <span>Legal Planning</span>
+        </a>
+        <a href="index.html" class="option">
+          <div class="imWrp">
+            <img src="./png/dashboard/tax_planing.png" alt="" />
+          </div>
+          <span>Tax Planning</span>
+        </a>
+        <a href="index.html" class="option">
+          <div class="imWrp">
+            <img src="./png/dashboard/Goals.png" alt="" />
+          </div>
+          <span>Goals</span>
+        </a>
+      </div>
+      <div class="dashboardSettings">
+        <a href="#" class="option">
+          <div class="imWrp">
+            <img src="./png/dashboard/learn.png" alt="" class="option-img-one"/>
+            <img src="./png/dashboard/learn.svg" alt="" class="option-img-second" />
+          </div>
+          <span>Learn</span>
+        </a>
+        <a href="#" class="option">
+          <div class="imWrp">
+            <img src="./png/dashboard/market.png" alt="" class="option-img-one"/>
+            <img src="./png/dashboard/market.svg" alt="" class="option-img-second" />
+          </div>
+          <span>Market</span>
+        </a>
+        <a  class="option settings_option selected">
+          <div class="imWrp">
+            <img src="./png/dashboard/setting.png" alt="" class="option-img-one"/>
+            <img src="./png/dashboard/setting.svg" alt="" class="option-img-second" />
+          </div>
+          <span>Settings</span>
+        </a>
+        <a href="#" class="option">
+          <div class="imWrp">
+            <img src="./png/dashboard/help.png" alt="" class="option-img-one"/>
+            <img src="./png/dashboard/help.svg" alt="" class="option-img-second" />
+          </div>
+          <span>Help</span>
+        </a>
+      </div>
+      <div class="selected_bar"><div class="selected_circle"></div></div>
+    </div>
+  </div>
+
+  <div class="main-section">
+        <!-- Card first -->
+
+        <div class="card cardChange firstCard topIconCards closable hide">
+            <div class="navigation onlyClose">
+                <img class='goBack' src="./png/chatnowBack.png" alt="" />
+                <img class="close" src="./png/x.png" alt="" />
+            </div>
+            <div class="dashboard-icons tab">
+                <div class="dashboard-background tablinks" onclick="openTabsPanel(event, 'cash')">
+                    <img class="cashButton0" src="./png/dashboard/cash_flow.png"="fas fa-home yellow active"></img>
+                </div>
+                <div class="dashboard-background tablinks" onclick="openTabsPanel(event, 'investments')">
+                    <img class="investButton0" id="investing" src="./png/dashboard/investments.png"="fas fa-home green"></img>
+                </div>
+                <div class="dashboard-background tablinks" onclick="openTabsPanel(event, 'realEstate')">
+                    <img class="realEstateButton0" src="./png/dashboard/real_Estate.png"="fas fa-home red"></img>
+                </div>
+                <div class="dashboard-background tablinks" onclick="openTabsPanel(event, 'insurance')">
+                    <img class="insuranceButton0" src="./png/dashboard/insurance.png"="fas fa-home blue"></img>
+                </div>
+                <div class="dashboard-background tablinks" onclick="openTabsPanel(event, 'planning')">
+                    <img class="legalPlanningButton0" src="./png/dashboard/legal_planning.png"="fas fa-home orangered"></img>
+                </div>
+                <div class="dashboard-background tablinks" onclick="openTabsPanel(event, 'taxplan')">
+                    <img class="taxPlaningButton0" id="taxPl" src="./png/dashboard/tax_planing.png"="fas fa-home purple"></img>
+                </div>
+            </div>
+            <div class="inner_content" id="default_content">
+                <div class="progress-border firstCrd">
+                    <div class="progress-statement bar active firstCrd">Reports</div>
+                    <div class="progress-report bar firstCrd">Plans</div>
+                    <div class="progress-other bar firstCrd">Goals</div>
+                    <span class="slide-bar"></span>
+                </div>
+                <div class="firstCrd-planning">
+                    <span class="firstCrd-text">Summary</span>
+                    <span class="firstCrd-text">Balance Sheet</span>
+                    <span class="firstCrd-text">Estate Plan</span>
+                    <span class="firstCrd-text">On The Day You Were Born</span>
+                </div>
+            </div>
+
+
+            <div class="tabcontent card_tabs" id="cash">
+                <div class="inner_content">
+                    <div class="progress-border cash cash-flow">
+                        <div class="progress-statement cash bar active">Statements</div>
+                        <div class="progress-report cash bar">Reports</div>
+                        <div class="progress-other  cash bar">Other</div>
+                        <span class="slide-bar"></span>
+                    </div>
+
+                    <div class="dropdown-main">
+                        <div class="dropdown-container cash">
+                            Bank of America
+                            <i class="fas fa-sort-up"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item">July 2020</div>
+                            <div class="dropdown-item">June 2020</div>
+                            <div class="dropdown-item">May 2020</div>
+                            <div class="dropdown-item">April 2020</div>
+                            <div class="dropdown-item">March 2020</div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-main">
+                        <div class="dropdown-container cash">
+                            KeyBank
+                            <i class="fas fa-sort-up"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item">July 2020</div>
+                            <div class="dropdown-item">June 2020</div>
+                            <div class="dropdown-item">May 2020</div>
+                            <div class="dropdown-item">April 2020</div>
+                            <div class="dropdown-item">March 2020</div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-main">
+                        <div class="dropdown-container cash">
+                            Paypal
+                            <i class="fas fa-sort-up"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item">July 2020</div>
+                            <div class="dropdown-item">June 2020</div>
+                            <div class="dropdown-item">May 2020</div>
+                            <div class="dropdown-item">April 2020</div>
+                            <div class="dropdown-item">March 2020</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabcontent card_tabs" id="investments">
+                <div class="inner_content">
+                    <div class="progress-border invest">
+                        <div class="progress-statement bar invest active">Statements</div>
+                        <div class="progress-report bar invest">Invoices</div>
+                        <div class="progress-other bar invest">Other</div>
+                        <span class="slide-bar"></span>
+                    </div>
+
+                    <div class="dropdown-main">
+                        <div class="dropdown-container invest">
+                            GreenStar
+                            <i class="fas fa-sort-up"></i>
+                        </div>
+                        <div class="dropdown-content invest">
+                            <div class="dropdown-item">July 2020</div>
+                            <div class="dropdown-item">June 2020</div>
+                            <div class="dropdown-item">May 2020</div>
+                            <div class="dropdown-item">April 2020</div>
+                            <div class="dropdown-item">March 2020</div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-main">
+                        <div class="dropdown-container invest">
+                            Charles Schwab
+                            <i class="fas fa-sort-up"></i>
+                        </div>
+                        <div class="dropdown-content invest">
+                            <div class="dropdown-item">July 2020</div>
+                            <div class="dropdown-item">June 2020</div>
+                            <div class="dropdown-item">May 2020</div>
+                            <div class="dropdown-item">April 2020</div>
+                            <div class="dropdown-item">March 2020</div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-main">
+                        <div class="dropdown-container invest">
+                            Morgan Stanley
+                            <i class="fas fa-sort-up"></i>
+                        </div>
+                        <div class="dropdown-content invest">
+                            <div class="dropdown-item">July 2020</div>
+                            <div class="dropdown-item">June 2020</div>
+                            <div class="dropdown-item">May 2020</div>
+                            <div class="dropdown-item">April 2020</div>
+                            <div class="dropdown-item">March 2020</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabcontent card_tabs" id="realEstate">
+                <div class="inner_content">
+                    <div class="progress-border restate">
+                        <div class="progress-statement restate bar active">Statements</div>
+                        <div class="progress-report restate bar">Reports</div>
+                        <div class="progress-other restate bar">Other</div>
+                        <span class="slide-bar"></span>
+                    </div>
+                    <div class="dropdown-main">
+                        <div class="dropdown-container restate">
+                            Wells Fargo
+                            <i class="fas fa-sort-up"></i>
+                        </div>
+                        <div class="dropdown-content restate">
+                            <div class="dropdown-item">July 2020</div>
+                            <div class="dropdown-item">June 2020</div>
+                            <div class="dropdown-item">May 2020</div>
+                            <div class="dropdown-item">April 2020</div>
+                            <div class="dropdown-item">March 2020</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabcontent card_tabs" id="insurance">
+                <div class="inner_content">
+                    <div class="progress-border inc">
+                        <div class="progress-statement bar active inc">Statements</div>
+                        <div class="progress-report bar inc">Reports</div>
+                        <div class="progress-other bar inc">Other</div>
+                        <span class="slide-bar"></span>
+                    </div>
+
+                    <div class="dropdown-main">
+                        <div class="dropdown-container inc">
+                            Life Insurance
+                            <i class="fas fa-sort-up"></i>
+                        </div>
+                        <div class="dropdown-content inc">
+                            <div class="dropdown-item">Liberty Mutual</div>
+                            <div class="dropdown-item">ING</div>
+                            <div class="dropdown-item">Northwestern Mutual</div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-main">
+                        <div class="dropdown-container inc">
+                            Long Term Care Insurance
+                            <i class="fas fa-sort-up"></i>
+                        </div>
+                        <div class="dropdown-content inc">
+
+                        </div>
+                    </div>
+
+                    <div class="dropdown-main">
+                        <div class="dropdown-container inc">
+                            Disability Insurance
+                            <i class="fas fa-sort-up"></i>
+                        </div>
+                        <div class="dropdown-content inc">
+
+                        </div>
+                    </div>
+
+                    <div class="dropdown-main">
+                        <div class="dropdown-container inc">
+                            Health Insurance
+                            <i class="fas fa-sort-up"></i>
+                        </div>
+                        <div class="dropdown-content inc">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabcontent card_tabs" id="planning">
+                <div class="inner_content">
+                    <div class="progress-border legal">
+                        <div class="progress-statement bar active legal">Statements</div>
+                        <div class="progress-report bar legal">Reports</div>
+                        <div class="progress-other bar legal">Other</div>
+                        <span class="slide-bar"></span>
+                    </div>
+                    <div class="legal-planning">
+                        <span class="legal-text">Estate Plan (Will/Trust)</span>
+                        <span class="legal-text">HIPPA Realease</span>
+                        <span class="legal-text">Power of Attorney (POA)</span>
+                        <span class="legal-text">Medical Power Of Attorney</span>
+                        <span class="legal-text">Living Will</span>
+                        <span class="legal-text">Do Not Resuscitate Order (DNR)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabcontent card_tabs" id="taxplan">
+                <div class="inner_content">
+                    <div class="progress-border tplan ">
+                        <div class="progress-statement bar active tplan">Statements</div>
+                        <div class="progress-report bar tplan">Reports</div>
+                        <div class="progress-other bar tplan">Other</div>
+                        <span class="slide-bar"></span>
+                    </div>
+
+                    <div class="tax-planning">
+                        <span class="tax-text">2019 Tax Return</span>
+                        <span class="tax-text">2018 Tax Return</span>
+                        <span class="tax-text">2017 Tax Return</span>
+                        <span class="tax-text">2016 Tax Return</span>
+                        <span class="tax-text">2015 Tax Return</span>
+                        <span class="tax-text">2014 Tax Return</span>
+                        <span class="tax-text">2013 Tax Return</span>
+                        <span class="tax-text">2012 Tax Return</span>
+                        <span class="tax-text">2011 Tax Return</span>
+                        <span class="tax-text">2010 Tax Return</span>
+                        <span class="tax-text">2009 Tax Return</span>
+                        <span class="tax-text">2008 Tax Return</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="composer">
+                <img class="composer" src="./png/dashboard/uploadBtn.png" alt="">
+            </div>
+        </div>
+
+        <!-- Notify card -->
+        <div class="card notify topIconCards notificationCard hide closable">
+            <img class="leave exit close" src="./png/x.png" alt="" />
+            <span class="span-desc">Alerts</span>
+            <div class="notificationHolder">
+                <div class="notification">
+                    <div class="notify">
+                        <div class="notificationName">Financial Report</div>
+                        <div class="notificationTopic">
+                            This financial report of last week...
+                        </div>
+                    </div>
+                    <div class="chatNow-notify">
+                        <div class="chatNow-circle"><span>2</span></div>
+                        <div class="chatNow-days">1 days ago</div>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notify">
+                        <div class="notificationName">GreenStar</div>
+                        <div class="notificationTopic">
+                            This financial report of last week...
+                        </div>
+                    </div>
+                    <div class="chatNow-notify">
+                        <div class="chatNow-circle"><span>2</span></div>
+                        <div class="chatNow-days">1 days ago</div>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notify">
+                        <div class="notificationName">Last month report</div>
+                        <div class="notificationTopic">
+                            This financial report of last week...
+                        </div>
+                    </div>
+                    <div class="chatNow-notify">
+                        <div class="chatNow-days">1 days ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Selection card -->
+        <div class="card selectionCard topIconCards hide closable">
+            <img class="leave exit close" src="./png/x.png" alt="" />
+            <div class="selectAdvisors">
+                <span class="span-desc">Select advisor</span>
+                <div class="owl-carousel owl-theme advisors">
+                    <div class="item">
+                        <img src="./png/gordon.jpg" class="advisorChat" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./png/silverman.jpg" class="advisorChat" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./png/smith.jpg" class="advisorChat" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./png/stevens.jpg" class="advisorChat" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./png/robins.jpg" class="advisorChat" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./png/romero.jpg" class="advisorChat" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="generalInquiries">
+                <span class="span-desc">General inquiries</span>
+                <div class="phone">
+                    <img src="./png/Call.png" alt="" />
+                    <div class="number">
+                        <div class="main">
+                            303-785-3838
+                            <span class="txIne">Main</span>
+                        </div>
+                        <br />
+                        <div class="tool-free">
+                            889-333-1967
+                            <span class="txIne">Toll free</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mail">
+                    <span class="mailSpan">
+                        <img class="at" src="./png/MailOne.png" alt="" /></span>
+                    <span>admin@greenstaradvisors.com</span>
+                </div>
+                <div class="address">
+                    <img src="./png/Address.png" alt="" />
+                    <div class="text">
+                        <span>GreenStar Advisors</span>
+                        <span>6494 S Quebec St</span>
+                        <span>Centennial, CO 80111</span>
+                    </div>
+                </div>
+            </div>
+
+            <p>or</p>
+            <div class="chat chatOpt1">
+                <img src="./png/ChatNow.png" alt="" />
+                Chat Now
+            </div>
+        </div>
+        <!-- User Profile -->
+        <div class="card userProfile topIconCards hide closable">
+            <div class="navigation justify-content-end">
+                <a href="profile.html"><img class="maximize" src="./png/kocka.png" alt="" /></a>
+                <img class="leave close" src="./png/x.png" alt="" />
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <span class="span-desc">User Profile</span>
+                    </div>
+                    <div class="profile">
+                        <img class="userPhoto" src="./png/gordon.jpg" alt="" />
+                        <div class="number">
+                            <div class="main up">
+                                <span class="name">Joe Johnson</span>
+                            </div>
+
+                            <div class="tool-free dob">
+                                <span class="act">January 1, 1950</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about">
+                    <div class="pResidence">
+                        <span class="residence">Primary Residence</span>
+                        <span>123 Main St</span>
+                        <span>Springfield U.S.A 12345-6789</span>
+                    </div>
+                    <div class="pContact">
+                        <span class="contact">Contact</span>
+                        <span>303-555-1234</span>
+                        <span>joejohnson@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="profile.html" class="edit">Profile</a>
+                <a class="signOut buttons " href="./Home,Login,Registration/index.html">Sign out</a>
+            </div>
+        </div>
+        <!-- Chat now card -->
+        <div class="card chatNow hide closable">
+            <div class="navigation">
+                <img class="goBack1" src="./png/chatnowBack.png" alt="" />
+                <img class="close" src="./png/x.png" alt="" />
+            </div>
+            <span class="span-desc">Select advisor</span>
+
+            <div class="owl-carousel owl-theme advisors">
+                <div class="item">
+                    <img class="advisorChat" src="./png/gordon.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="advisorChat" src="./png/silverman.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="advisorChat" src="./png/smith.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="advisorChat" src="./png/stevens.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="advisorChat" src="./png/robins.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="advisorChat" src="./png/romero.jpg" alt="" />
+                </div>
+            </div>
+            <span class="span-desc c">Continue conversation</span>
+
+            <div class="chatNow-main">
+
+                <div class="chatNow-container">
+
+                    <div class="chatNow-info">
+                        <div class="chatNow-img"><img src="./png/romero.jpg" alt=""></div>
+                        <div class="chatNow-text">
+                            <span class="chatNow-name">Chad</span>
+                            <span class="chatNow-about">What about your investment?</span>
+                        </div>
+                    </div>
+
+
+                    <div class="chatNow-notify">
+                        <div class="chatNow-circle"><span>2</span></div>
+                        <div class="chatNow-days">1 days ago</div>
+                    </div>
+                </div>
+
+
+
+                <div class="chatNow-container">
+
+                    <div class="chatNow-info">
+                        <div class="chatNow-img"><img src="./png/romero.jpg" alt=""></div>
+                        <div class="chatNow-text">
+                            <span class="chatNow-name">Makendra</span>
+                            <span class="chatNow-about">What about this year?</span>
+                        </div>
+                    </div>
+
+
+                    <div class="chatNow-notify">
+                        <div class="chatNow-circle"><span>2</span></div>
+                        <div class="chatNow-days">1 days ago</div>
+                    </div>
+                </div>
+
+
+                <div class="chatNow-container">
+
+                    <div class="chatNow-info">
+                        <div class="chatNow-img"><img src="./png/robins.jpg" alt=""></div>
+                        <div class="chatNow-text">
+                            <span class="chatNow-name">Jane</span>
+                            <span class="chatNow-about">Im here to help you</span>
+                        </div>
+                    </div>
+
+
+                    <div class="chatNow-notify">
+                        <div class="chatNow-circle"><span>2</span></div>
+                        <div class="chatNow-days">1 days ago</div>
+                    </div>
+                </div>
+
+                <div class="chatNow-container">
+
+                    <div class="chatNow-info">
+                        <div class="chatNow-img"><img src="./png/romero.jpg" alt=""></div>
+                        <div class="chatNow-text">
+                            <span class="chatNow-name">John</span>
+                            <span class="chatNow-about">Tell me about your current financial sta...</span>
+                        </div>
+                    </div>
+
+
+                    <div class="chatNow-notify">
+                        <div class="chatNow-circle"><span>2</span></div>
+                        <div class="chatNow-days">1 days ago</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Advisor Profile -->
+        <div class="card m advisorProfile hide closable">
+            <div class="navigation">
+                <img class="goBack1" src="./png/chatnowBack.png" alt="" />
+                <img class="close" src="./png/x.png " alt="" />
+            </div>
+            <div class="selectAdvisors">
+                <span class="span-desc">Profile</span>
+            </div>
+            <div class="phone">
+                <img class="avatar" src="./png/gordon.jpg" alt="" />
+                <div class="number">
+                    <div class="main">
+                        <span class="name">Chad Gordon</span>
+                    </div>
+                    <br />
+                    <div class="tool-free">
+                        <span class="act"> Wealth Advisor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="generalInquiries a">
+                <div class="phone">
+                    <img src="./png/zelenaSlusalica.png" alt="" />
+                    <div class="number">
+                        <div class="main">
+                            <span class="t">303-785-3838</span>
+                            <span class="txIne">Main</span>
+                        </div>
+                        <br />
+                        <div class="tool-free">
+                            <span class="t">889-333-1967</span><span class="txIne">Toll Free</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mail">
+                    <span class="mailSpan green_mail">
+                        <img class="at" src="./png/MailOne.png" alt="" /></span>
+                    <span class="t">admin@greenstaradvisors.com</span>
+                </div>
+                <div class="address">
+                    <img src="./png/zeleniMejli.png" alt="" />
+                    <div class="text">
+                        <span class="t">GreenStar Advisors</span>
+                        <span class="t">6494 S Quebec St</span>
+                        <span class="t">Centennial, CO 80111</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="z">or</p>
+            <div class="chat g">
+                <div class="chatOpt">
+                    <img src="./png/zeleniSkedul (2).png" alt="" />
+                    <span>Appointment</span>
+                </div>
+                <div class="chatOpt chatOpt1">
+                    <img class="openChat" src="./png/ChatNow.png" alt="" />
+                    <span>Chat now</span>
+                </div>
+                <div class="chatOpt">
+                    <img src="./png/zeleniI (3).png" alt="" />
+                    <span>About</span>
+                </div>
+            </div>
+        </div>
+        <!-- open chat -->
+        <div class="card chatting hide closable">
+            <div class="chatHead">
+                <div class="chatAccInfo">
+                    <img class="goBack" src="./png/chatnowBack.png" alt="" />
+                    <img class="chatAvatar" src="./png/gordon.jpg" alt="" />
+                    <span>Gordon</span>
+                    <div class="circle">
+                        <span>online</span>
+                    </div>
+                </div>
+                <div class="chatOptions">
+                    <img id="maximization" src="./png/kocka.png" alt="" />
+                    <img class="close" src="./png/x.png" alt="" />
+                </div>
+            </div>
+            <div class="chatBody">
+                <div class="chatMessage">
+                    <div class="icon">
+                        <img class="receiver" src="./png/gordon.jpg" alt="" />
+                    </div>
+                    <div class="message receiver">I need some help!</div>
+                </div>
+                <div class="chatMessage">
+                    <div class="icon">
+                        <img src="./png/gordon.jpg" alt="" />
+                    </div>
+                    <div class="message sender">Hello sir. How may I help you?</div>
+                </div>
+                <div class="chatMessage">
+                    <div class="icon">
+                        <img src="./png/gordon.jpg" alt="" />
+                    </div>
+                    <div class="message sender">...</div>
+                </div>
+            </div>
+            <div class="chatSend">
+                <input type="text" class="input" placeholder="Type something to send.">
+                <div class="chatButtons">
+                    <img src="./png/chatSmile.png" alt="" />
+                    <img src="./png/chatAttachment.png" alt="" />
+                    <img src="./png/chatSend.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <!-- maximize chat -->
+        <div class="maximizeChat hide closable">
+            <div class="card maximizedAdvisors fr">
+                <span class="span-desc">Select advisor</span>
+                <!-- <div class="advisors">
+                <img  src="./png/gordon.jpg" alt="" />
+                <img  src="./png/silverman.jpg" alt="" />
+                <img  src="./png/smith.jpg" alt="" />
+                <img  src="./png/stevens.jpg" alt="" />
+                <img  src="./png/robins.jpg" alt="" />
+                <img  src="./png/romero.jpg" alt="" />
+                </div> -->
+
+                <div class="owl-carousel owl-theme advisors">
+                    <div class="item">
+                        <img src="./png/gordon.jpg" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./png/silverman.jpg" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./png/smith.jpg" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./png/stevens.jpg" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./png/robins.jpg" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="./png/romero.jpg" alt="" />
+                    </div>
+                </div>
+                <span class="span-desc c">Continue conversation</span>
+                <div class="chatNow-main">
+
+                    <div class="chatNow-container">
+
+                        <div class="chatNow-info">
+                            <div class="chatNow-img"><img src="./png/romero.jpg" alt=""></div>
+                            <div class="chatNow-text">
+                                <span class="chatNow-name">Chad</span>
+                                <span class="chatNow-about">What about your investment?</span>
+                            </div>
+                        </div>
+
+
+                        <div class="chatNow-notify">
+                            <div class="chatNow-circle"><span>2</span></div>
+                            <div class="chatNow-days">1 days ago</div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="chatNow-container">
+
+                        <div class="chatNow-info">
+                            <div class="chatNow-img"><img src="./png/romero.jpg" alt=""></div>
+                            <div class="chatNow-text">
+                                <span class="chatNow-name">Makendra</span>
+                                <span class="chatNow-about">What about this year?</span>
+                            </div>
+                        </div>
+
+
+                        <div class="chatNow-notify">
+                            <div class="chatNow-circle"><span>2</span></div>
+                            <div class="chatNow-days">1 days ago</div>
+                        </div>
+                    </div>
+
+
+                    <div class="chatNow-container">
+
+                        <div class="chatNow-info">
+                            <div class="chatNow-img"><img src="./png/robins.jpg" alt=""></div>
+                            <div class="chatNow-text">
+                                <span class="chatNow-name">Jane</span>
+                                <span class="chatNow-about">Im here to help you</span>
+                            </div>
+                        </div>
+
+
+                        <div class="chatNow-notify">
+                            <div class="chatNow-circle"><span>2</span></div>
+                            <div class="chatNow-days">1 days ago</div>
+                        </div>
+                    </div>
+
+                    <div class="chatNow-container">
+
+                        <div class="chatNow-info">
+                            <div class="chatNow-img"><img src="./png/romero.jpg" alt=""></div>
+                            <div class="chatNow-text">
+                                <span class="chatNow-name">John</span>
+                                <span class="chatNow-about">Tell me about your current financial sta...</span>
+                            </div>
+                        </div>
+
+
+                        <div class="chatNow-notify">
+                            <div class="chatNow-circle"><span>2</span></div>
+                            <div class="chatNow-days">1 days ago</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card chatting gr">
+                <div class="chatHead gr">
+                    <div class="chatAccInfo acc">
+                        <img class="chatAvatar" src="./png/gordon.jpg" alt="" />
+                        <span>Gordon</span>
+                        <div class="circle">
+                            <span>online</span>
+                        </div>
+                    </div>
+                    <div class="chatOptions">
+                        <img class='minimize' src="./png/kocka.png" alt="" />
+                        <img class="close" src="./png/x.png" alt="" />
+                    </div>
+                </div>
+                <div class="chatBody">
+                    <div class="chatMessage">
+                        <div class="icon">
+                            <img class="receiver" src="./png/gordon.jpg" alt="" />
+                        </div>
+                        <div class="message receiver">I need some help!</div>
+                    </div>
+                    <div class="chatMessage">
+                        <div class="icon">
+                            <img src="./png/gordon.jpg" alt="" />
+                        </div>
+                        <div class="message sender">Hello sir. How may I help you?</div>
+                    </div>
+                    <div class="chatMessage">
+                        <div class="icon">
+                            <img src="./png/gordon.jpg" alt="" />
+                        </div>
+                        <div class="message sender">...</div>
+                    </div>
+                </div>
+                <div class="chatSend gr"><input type="text" class="input" placeholder="Type something to send.">
+                    <div class="chatButtons">
+                        <img src="./png/chatSmile.png" alt="" />
+                        <img src="./png/chatAttachment.png" alt="" />
+                        <img src="./png/chatSend.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload file card -->
+
+        <div name="0" class="card uploadFileProgress upload hide  closable">
+            <div class="navigation"><img class='goBack' src="./png/chatnowBack.png" alt="" /><img class="close"
+                    src="./png/x.png" alt="" />
+            </div>
+
+            <span class="upload-text">Upload file</span>
+
+            <div class="tab upload-bar">
+                <button class="tablinks active upload-btn" onclick="openTabs(event, 'upload')">Upload</button>
+                <button class="tablinks upload-btn" onclick="openTabs(event, 'uploaded')">Files</button>
+                <div class="slidebar"></div>
+            </div>
+
+            <div class="reports tabcontent" id="upload" style="display: block;">
+                <div class="report">
+                    <img class="report-svg" src="./png/Path 2014.svg" alt="">
+                    <div class="report-status">
+                        <div class="span1">
+                            <span class="report-span1">financial_report_2020.pdf</span>
+                            <div class="report-img">
+                                <img src="./png/Line 18.svg" alt="">
+                                <img src="./png/x.png" alt="">
+                            </div>
+                        </div>
+                        <div class="report-progress">
+                            <div class="report-progress-body"></div>
+                        </div>
+                        <span class="report-span2">536 Kb of 1.36 Mb</span>
+                    </div>
+                </div>
+
+                <div class="report">
+                    <img class="report-svg" src="./png/Path 2014.svg" alt="">
+                    <div class="report-status">
+                        <div class="span1">
+                            <span class="report-span1">financial_report_2019.pdf</span>
+                            <div class="report-img">
+                                <img src="./png/Line 18.svg" alt="">
+                                <img src="./png/x.png" alt="">
+                            </div>
+                        </div>
+                        <div class="report-progress">
+                            <div class="report-progress-body"></div>
+                        </div>
+                        <span class="report-span2">204 Kb of 936 Kb</span>
+                    </div>
+                </div>
+
+                <div class="upload-field">
+                    <img src="./png/ic_cloud_upload_24px.svg" alt="">
+                    <span>Drag and drop here</span>
+                    <span>or</span>
+                    <span class="browse-span">browse</span>
+                </div>
+
+                <div class="upload-button">
+                    Upload
+                </div>
+            </div>
+
+            <div class="reports tabcontent" id="uploaded">
+                <div class="report">
+                    <img class="report-svg" src="./png/Path 2014.svg" alt="">
+                    <div class="report-status">
+                        <div class="span1">
+                            <span class="report-span1">financial_report_2020.pdf</span>
+                            <div class="report-img">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <i class="fa fa-download aria-hidden=" true""></i>
+                            </div>
+                        </div>
+                        <span class="report-span2">1.35 Mb</span>
+                    </div>
+                </div>
+
+                <div class="report">
+                    <img class="report-svg" src="./png/Path 2014.svg" alt="">
+                    <div class="report-status">
+                        <div class="span1">
+                            <span class="report-span1">financial_report_2020.pdf</span>
+                            <div class="report-img">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <i class="fa fa-download aria-hidden=" true""></i>
+                            </div>
+                        </div>
+                        <span class="report-span2">1.11 Mb</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+  </div>
+
+
+
+<div class="profile_block">
+    <div class="tab tabSwitch">
+        <div class="progress">
+            <button class="tablinks active" onclick="openTabs(event, 'Profile1')">Profile</button>
+            <button class="tablinks" onclick="openTabs(event, 'Inputs')">Inputs</button>
+            <button class="tablinks" onclick="openTabs(event, 'Display')">Display</button>
+            <button class="tablinks" onclick="openTabs(event, 'Security')">Security</button>
+            <div class="slidebar"></div>
+        </div>
+    </div>
+
+    <div id="Profile1" class="tabcontent settingsProfile">
+        <div class="content">
+            <div class="info">
+                <div class="photo">
+                    <img src="./png/gordon.jpg" alt="" />
+                    <span class="pictureUpdate"><i class="fas fa-camera"></i>Update your profile picture</span>
+                </div>
+                <div class="section">
+                    <span class="head">Personal Information</span>
+                    <div class="row">
+                        <div class="data">
+                            <span class="label">First Name</span>
+                            <input type="text" placeholder="Joe" />
+                        </div>
+                        <div class="data">
+                            <span class="label">Last Name</span>
+                            <input type="text" placeholder="Johnson" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="data">
+                            <span class="label">Gender</span>
+                            <input type="text" placeholder="Male" />
+                        </div>
+                        <div class="data">
+                            <span class="label">Date of Birth</span>
+                            <input type="text" placeholder="January 1,1950" />
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <span class="head">Contact Information</span>
+                    <div class="row">
+                        <div class="data">
+                            <span class="label">Cell Number</span>
+                            <input type="text" placeholder="303-555-1234" />
+                        </div>
+                        <div class="data">
+                            <span class="label">Email address</span>
+                            <input type="text" placeholder="joejohnson@gmail.com" />
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <span class="head">Address</span>
+                    <div class="data mx-0">
+                        <span class="label">Primary residence</span>
+                        <textarea
+                            placeholder="123 Main St                                          Springfield U.S.A 12345-6789"></textarea>
+                    </div>
+                    <button class="update">Update Information</button>
+                </div>
+            </div>
+            <div class="otherSide">
+                <div class="personalityTest">
+                    <span class="otherHead">Personality Tests</span>
+                    <span>Myers-Briggs</span>
+                    <span>DISC</span>
+                    <span>Enneagram</span>
+                    <span>True Colours</span>
+                    <span>HEXACO</span>
+                    <span>Eysenck</span>
+                    <span>Caliper</span>
+                    <span>Minnesota Multiphasic Personality Invertory (MMPI) </span>
+                </div>
+                <div class="buttonGroup2">
+                    <span class="otherHead">Risk Rater</span>
+                    <span>Latest Score: 46</span>
+                    <button>Risk Rater Source History</button>
+                    <button>Latest Risk Rater Report</button>
+                    <button>Retake Risk Rater</button>
+                </div>
+                <div class="buttonGroup">
+                    <button>Communication Preferences</button>
+                    <button>Alerts Preferences</button>
+                    <button id="openReport">Create Report</button>
+                </div>
+            </div>
+        </div>
+        <div class="card closable report hide">
+            <div class="exit close"><img src="./png/x.png" alt="" /></div>
+            <div class="send-report">Send report</div>
+            <div class="settings-form">
+                <div class="settings-items">
+                    <div class="settings-name">First Name</div>
+                    <input type="text" />
+                </div>
+                <div class="settings-items">
+                    <div class="settings-name">Last Name</div>
+                    <input type="text" />
+                </div>
+                <div class="settings-items">
+                    <div class="settings-name">Birthday</div>
+                    <input type="text" />
+                </div>
+                <div class="settings-items">
+                    <div class="settings-name">Email</div>
+                    <input type="text" />
+                </div>
+                <div class="settings-check-container">
+                    <input class="settings-check" type="checkbox" />
+                    <div class="settings-terms">
+                        I agree to
+                        <span class="settings-term-span">Terms and Conditions</span>
+                    </div>
+                </div>
+
+                <div class="settings-submit-container">
+                    <input class="settings-submit" value="Submit" type="button" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Inputs" class="tabcontent settingInput">
+        <div class="content">
+            <div class="info">
+                <div class="section">
+                    <span class="head">Personal Assumptions <img src="./png/edit.png" alt=""></span>
+                    <span>Semi-Retirement Age: 63</span>
+                    <span>Retirement Age: 67</span>
+                    <span>Life Expectancy: 00</span>
+                    <span>Final expenses: $20,000</span>
+                    <span>Taxe Mode: From 1040</span>
+                </div>
+                <div class="section">
+                    <span class="head">Family and Entities <img src="./png/edit.png" alt=""></span>
+                </div>
+                <div class="section">
+                    <table>
+                        <tr>
+                            <td>Jane Johnson</td>
+                            <td>Wife</td>
+                            <td>February 1,1950</td>
+                        </tr>
+                        <tr>
+                            <td>Joe Johnson, Jr.</td>
+                            <td>Son</td>
+                            <td>March 15,1980</td>
+                        </tr>
+                        <tr>
+                            <td>Suzy Johnson</td>
+                            <td>Daughter</td>
+                            <td>April 15,1981</td>
+                        </tr>
+                        <tr>
+                            <td>James Johnson</td>
+                            <td>Nephew</td>
+                            <td>May 15,1981</td>
+                        </tr>
+                        <tr>
+                            <td>Xyz Foundation</td>
+                            <td>Charity</td>
+                            <td>December 10,1990</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="section">
+                    <div class="buttonGroup">
+                        <span class="head">Market Assumption</span>
+                        <span>Default Growth Rates</span>
+                        <button id='growth'>Growth Assumptions</button>
+                    </div>
+                </div>
+            </div>
+            <div class="otherSide">
+
+
+                <div class="buttonGroup">
+                    <span class="head">Accounts, Income, and Expenses</span>
+                    <button>Assests and Liabilities</button>
+                    <button>Income</button>
+                    <button>Insurance</button>
+                    <button>Expenses and Budget</button>
+                </div>
+                <div class="buttonGroup2">
+                    <span class="head">Goal inputs</span>
+                    <button>Savings and Transfers</button>
+                    <button>Objectives</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- GROWTH ASSUMPTION CARD -->
+        <div class="card assumbtion closable hide">
+            <img class="leave exit close" src="./png/x.png" alt="" />
+            <div class="send-report">Growth Assumptions</div>
+
+            <div class="progress-border assumbtion-border ">
+                <div class="progress-statement  assumbtion-bar active">Statements</div>
+                <div class="progress-report  assumbtion-bar ">Reports</div>
+                <div class="progress-other   assumbtion-bar ">Other</div>
+                <span class="slide-bar"></span>
+            </div>
+
+            <table style="width: 100%">
+                <tr class="first-header">
+                    <th>Model</th>
+                    <th>Current</th>
+                    <th>Default</th>
+                </tr>
+                <br />
+                <tr class="first-header">
+                    <th>Portfolio</th>
+                    <th>Grown Rate</th>
+                    <th>Grown Rate</th>
+                </tr>
+
+                <tr class="first-header">
+                    <td>Asset Preservation</td>
+                    <td>3.79%</td>
+                    <td>3.76%</td>
+                </tr>
+                <tr class="first-header">
+                    <td>Income</td>
+                    <td>5.01%</td>
+                    <td>4.88%</td>
+                </tr>
+                <tr class="first-header">
+                    <td>Enhanced Income</td>
+                    <td>6.45%</td>
+                    <td>5.94%</td>
+                </tr>
+                <tr class="first-header">
+                    <td>Growth and Income</td>
+                    <td>7.27%</td>
+                    <td>6.63%</td>
+                </tr>
+                <tr class="first-header">
+                    <td>Growth</td>
+                    <td>9.05%</td>
+                    <td>7.89%</td>
+                </tr>
+                <tr class="first-header">
+                    <td>Aggressive Growth</td>
+                    <td>9.77%</td>
+                    <td>8.37%</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="Display" class="tabcontent settingsDisplay">
+        <div class="content">
+            <div class="info">
+                <div class="section">
+                    <span class="head">Display Size</span>
+                    <div class="displaySize">
+                        <input type="range" min="100" max="200" step="25" value="150" class="slider">
+                        <div class="sliderticks">
+                            <p>100%</p>
+                            <p>125%</p>
+                            <p>150%</p>
+                            <p>175%</p>
+                            <p>200%</p>
+                        </div>
+                    </div>
+                    <span class="head">Theme</span>
+                    <div class="checks">
+                        <div> <input type="radio" name="theme" id="classic"><label for="classic">Classic</label></div>
+                        <div><input type="radio" name="theme" id="dark"><label for="dark">Dark</label></div>
+                    </div>
+                    <span class="head">Display Setting</span>
+                    <div class="progressTwo">
+                        <span>Wealth Optimize</span>
+                        <span>Debt Free</span>
+                        <span>Cash Flow</span>
+                        <span>Real Estate</span>
+                        <span>Legacy</span>
+                        <span>Customize</span>
+                    </div>
+                    <div class="darkScreen"></div>
+                    <div class="forBtn">
+                        <button>Save Setting</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="Security" class="tabcontent settingsSecurity">
+        <div class="wrapper">
+            <div class="top">
+                <div class="left">
+                    <div class="password">
+                        <span class="head">Change Password</span>
+                        <div class="row">
+                            <span class="label">Old Password</span>
+                            <input type="text">
+                        </div>
+                        <div class="row">
+                            <span class="label">New Password</span>
+                            <input type="text">
+                        </div>
+                        <div class="row">
+                            <span class="label">Confirm New Password</span>
+                            <input type="text">
+                        </div>
+                        <button>Update Password</button>
+                    </div>
+                    <div class="authentication">
+                        <span class="head">Two-Factor Authentication</span>
+                        <span>A second step after entering your password verifies it's you signing in.</span>
+                        <div class="row">
+                            <span class="label">Enter your mobile number</span>
+                            <input type="text" placeholder="303-555-1234">
+                        </div>
+                        <button>Confirm</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <span class="head">Security Questions</span>
+                    <div class="row">
+                        <span class="label">1. What was your first pet's name?</span>
+                        <input type="text">
+                    </div>
+                    <div class="row">
+                        <span class="label">2. What is your mother's maiden name?</span>
+                        <input type="text">
+                    </div>
+                    <div class="row">
+                        <span class="label">3. What is your favorite sport's team?</span>
+                        <input type="text">
+                    </div>
+                    <div class="row">
+                        <span class="label">4. What is your childhood best friend name?</span>
+                        <input type="text">
+                    </div>
+                    <button>Update</button>
+                </div>
+            </div>
+            <div class="bottom">
+                <button>Delegate</button>
+                <span class="head">Right to be Forgotten</span>
+                <span>At GreenStar, we believe that have a right to be forgotten. By using this tool, we recognize that
+                    we are in a position of trust.
+                    In response to this, we believe that it is our responsibility to keep your information secure so
+                    long as you trust us with it. This
+                    also means that we never sell it and allow you to delete it from our system if you wish to part ways
+                    with us. This is our
+                    right to be forgotten. If you are not a client, you can do this at any time. Please know that we
+                    take this literally. If you elect to
+                    be forgotten, all your data with us is erased from our system. If you are a client, it's complicated
+                    we cannot "forget" you so long
+                    as your account is open and for a period of time afterwards.
+                    <div class="buttons security">
+                        <button>Delete Account</button>
+                        <button>Selective Erase</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./profile.js"></script>
+    <script src="./index.js" defer></script>
+    <script src="js/owl.carousel.min.js"></script>
+  <script src="https://kit.fontawesome.com/6a8cd6e3f0.js" crossorigin="anonymous" defer></script>
+
+</body>
+
+</html>

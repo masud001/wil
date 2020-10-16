@@ -1,0 +1,38 @@
+@font-face{
+    font-family:  'Neuton-reg',serif;
+    src: url('../fonts/Neuton/Neuton-Regular.ttf');
+}
+@font-face{
+    font-family:  'Neuton-bold';
+    src: url('../fonts/Neuton/Neuton-Bold.ttf');
+}
+@font-face{
+    font-family:  'Neuton-light';
+    src: url('../fonts/Neuton/Neuton-Light.ttf');
+}
+
+.font-neuton-reg{
+    font-family: Neuton-reg;
+}
+.font-neuton-bold{
+    font-family: Neuton-bold;
+}
+.font-neuton-light{
+    font-family: Neuton-light;
+}
+
+@font-face{
+    font-family:  'Roboto-reg';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face{
+    font-family:  'Roboto-bold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+
+.font-roboto-reg{
+    font-family: Roboto-reg;
+}
+.font-roboto-bold{
+    font-family: Roboto-bold;
+}
